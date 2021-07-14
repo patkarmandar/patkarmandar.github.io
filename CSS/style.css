@@ -1,0 +1,115 @@
+/* Fonts Family */
+@font-face {
+	font-family: Redressed;
+	src: url(https://patkarmandar.github.io/Fonts/Redressed.ttf);
+}
+.redressed {
+	font-family: Redressed;
+}
+
+/* Starts Here */
+.sidenav {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #050505;
+	transition: 0.5s;
+}
+.nav-header {
+	margin: 0 2rem;
+	border-radius: 4px;
+	background-color: #111;
+	font-size: 3rem;
+	color: white;
+}
+.repo-list {
+	padding: 1rem 5rem;
+}
+.repo a , a.closebtn , .contact a {
+	display: inline;
+	padding: 0;
+	text-decoration: none;
+	color: #818181;
+	transition: 0.3s;
+}
+.repo a {
+	display: block;
+	padding: 0.25rem;
+	font-size: 2.25rem;
+}
+.sidenav .closebtn  {
+	font-size: 4.5rem;
+}
+.contact a {
+	font-size: 2.5rem;
+}
+.repo a:hover , a.closebtn:hover , .contact a:hover {
+	color: #F1F1F1;
+}
+.openbtn {
+	cursor: pointer;
+	font-size: 2.75rem;
+	color: #ECEFF1;
+}
+body {
+	height: 100%;
+	margin: 2rem 0;
+	background-color: #050505;
+}
+.container-main {
+	padding: 2rem;
+}
+.title {
+	padding: 0.25rem;
+	font-size: 3.25rem;
+	color: #CEEAFF;
+}
+.about {
+	padding: 0.25rem;
+	font-size: 2.5rem;
+	color: #888888;
+}
+.contact {
+	padding: 1rem;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1024px){
+	.title {
+		font-size: 3rem;
+	}
+	.about {
+		font-size: 2.25rem;
+	}
+}
+@media screen and (max-width: 800px){
+	.nav-header, .openbtn {
+		font-size: 2.25rem;
+	}
+	.repo a , .about {
+		font-size: 2rem;
+	}
+	.title {
+		font-size: 2.75rem;
+	}
+}
+@media screen and (max-width: 650px){
+	.nav-header {
+		margin: 0 0.5rem;
+	}
+	.repo-list , .container-main {
+		padding: 0.5rem;
+	}
+	.repo a , .about {
+		font-size: 1.75rem;
+	}
+	.title {
+		font-size: 2.25rem;
+	}
+}
