@@ -1,6 +1,6 @@
 baseURL = 'https://minimal-black-demo.netlify.app'
 languageCode = 'en-us'
-title = 'Minimal Black Theme'
+title = 'Everything Mandar'
 theme = "minimal-black"
 
 # Enable search index generation and web app manifest
@@ -15,8 +15,8 @@ theme = "minimal-black"
   notAlternative = true
 
 [params]
-  brand = "Hugo Minimal Black"
-  description = "A minimal, dark-mode first personal site, or whatever else you want it to be about"
+  brand = "PRIME"
+  description = "Engineering security by breaking and building code."
 
   # Favicon - Place your favicon files in /static/ directory
   # Supported formats: .ico, .png, .svg
@@ -27,7 +27,7 @@ theme = "minimal-black"
   logo = "images/logo.png"
 
   # Project and blog intro text
-  projectsIntro = "Selected projects to display list." # Can be empty
+  projectsIntro = "A selection of things I’ve been building – tools, resources, and experiments." # Can be empty
   blogIntro = "" # Can be empty
 
   # Web App Manifest Configuration (PWA support)
@@ -56,7 +56,7 @@ theme = "minimal-black"
     showLatestPosts = true
     featuredProjectsLimit = 3
     latestPostsLimit = 3
-    projectsTitle = "Selected Work"
+    projectsTitle = "Selected Projects"
     projectsSubtitle = ""
     blogTitle = "Latest Writing"
     blogSubtitle = ""
@@ -64,92 +64,88 @@ theme = "minimal-black"
 
     # Technology Stack Display
     [[params.home.tech]]
+      label = "Cyber Security"
+      icon = "fa-solid fa-shield-halved"
+
+    [[params.home.tech]]
+      label = "Application Security"
+      icon = "fa-solid fa-bug"
+
+    [[params.home.tech]]
+      label = "API Security"
+      icon = "devicon-postman-plain"
+
+    [[params.home.tech]]
+      label = "Network Security"
+      icon = "fa-solid fa-network-wired"
+
+    [[params.home.tech]]
+      label = "Android Security"
+      icon = "devicon-android-plain"
+
+    [[params.home.tech]]
+      label = "Reverse Engineering"
+      icon = "fa-solid fa-screwdriver-wrench"
+
+    [[params.home.tech]]
+      label = "Cryptography"
+      icon = "fa-solid fa-key"
+
+    [[params.home.tech]]
+      label = "OSINT"
+      icon = "fa-solid fa-magnifying-glass"
+
+    [[params.home.tech]]
+      label = "Linux"
+      icon = "devicon-linux-plain"
+
+    [[params.home.techReverse]]
+      label = "BASH"
+      icon = "devicon-bash-plain"
+
+    [[params.home.techReverse]]
       label = "Python"
       icon = "devicon-python-plain"
 
-    [[params.home.tech]]
+    [[params.home.techReverse]]
+      label = "JavaScript"
+      icon = "devicon-javascript-plain"
+
+    [[params.home.techReverse]]
+      label = "PHP"
+      icon = "devicon-php-plain"
+
+    [[params.home.techReverse]]
+      label = "Laravel"
+      icon = "devicon-laravel-plain"
+
+    [[params.home.techReverse]]
+      label = "C++"
+      icon = "devicon-cplusplus-plain"
+
+    [[params.home.techReverse]]
       label = "Java"
       icon = "devicon-java-plain"
 
-    [[params.home.tech]]
-      label = "Spring"
-      icon = "devicon-spring-plain"  
-
-    [[params.home.tech]]
-      label = "Vaadin"
-      icon = "devicon-vaadin-plain"    
-
-    [[params.home.tech]]
-      label = "Debian"
-      icon = "devicon-debian-plain"
-
-    [[params.home.tech]]
-      label = "GitLab"
-      icon = "devicon-gitlab-plain"
-
-    [[params.home.tech]]
-      label = "Docker"
-      icon = "devicon-docker-plain"
-
     [[params.home.techReverse]]
-      label = "PostgreSQL"
-      icon = "devicon-postgresql-plain"
-
-    [[params.home.techReverse]]
-      label = "MongoDB"
-      icon = "devicon-mongodb-plain"
+      label = "SQL"
+      icon = "devicon-mysql-plain"
 
     [[params.home.techReverse]]
       label = "Git"
       icon = "devicon-git-plain"
 
     [[params.home.techReverse]]
+      label = "GitHub"
+      icon = "devicon-github-plain"
+
+    [[params.home.techReverse]]
       label = "Hugo"
-      icon = "devicon-hugo-plain"  
-
-    [[params.home.techReverse]]
-      label = "Jenkins"
-      icon = "devicon-jenkins-plain"   
-
-    [[params.home.techReverse]]
-      label = "JetBrains"
-      icon = "devicon-jetbrains-plain" 
-
-    [[params.home.techReverse]]
-      label = "Json"
-      icon = "devicon-json-plain" 
-
-    [[params.home.techReverse]]
-      label = "Linux"
-      icon = "devicon-linux-plain"          
-
-    [[params.home.techReverse]]
-      label = "Liquibase"
-      icon = "devicon-liquibase-plain" 
+      icon = "devicon-hugo-plain"
 
     [[params.home.techReverse]]
       label = "Markdown"
-      icon = "devicon-markdown-original"  
-
-    [[params.home.techReverse]]
-      label = "YAML"
-      icon = "devicon-yaml-plain"  
-
-    [[params.home.techReverse]]
-      label = "Wordpress"
-      icon = "devicon-wordpress-plain"
-
-    [[params.home.techReverse]]
-      label = "WooCommerce"
-      icon = "devicon-woocommerce-plain"            
-
-    [[params.home.techReverse]]
-      label = "Traefik"
-      icon = "devicon-traefikproxy-plain" 
-
-    [[params.home.techReverse]]
-      label = "pfSense"
-      icon = "devicon-pfsense-plain"       
+      icon = "devicon-markdown-original"
 
   # About Page Alternative Layout Configuration - Optional
   [params.about.alt]
@@ -193,22 +189,22 @@ theme = "minimal-black"
 
   # Hero Section Configuration
   [params.hero]
-    badge = "Software Engineer"
-    title = "Hi, I'm Your Name or your interesting title."
-    role = "Subtitle for title with role perspective"
-    summary = "You can write your summary to be displayed here."
+    badge = "Security Engineer"
+    title = "Hi, I'm Mandar Patkar."
+    role = "Engineering security by breaking and building code."
+    summary = "Security starts where curiosity meets code. I dig into systems, map real attack paths, and transform vulnerabilities into clean, production-ready fixes. I don’t just test security — I engineer it."
     # avatar = "images/avatar.jpg"  # Optional: 400x400px recommended
-    location = "City, Country"
-    focus = "Currently focused on Hugo themes & developer experience."
+    location = "Mumbai, IN"
+    focus = "Currently focused on digging into systems."
     available = true
     availableLabel = "Available for work"
 
     nowLabel = "Quick Facts"
     nowIntro = "Right now I'm mainly:"
     now = [
-      "Building minimal Hugo themes",
-      "Exploring dark-mode design patterns",
-      "Writing about web performance"
+      "Exploring application architecture",
+      "Building security tools",
+      "Writing secure code"
     ]
 
     [params.hero.primary]
@@ -226,18 +222,18 @@ theme = "minimal-black"
 
   # Social Links
   [[params.social]]
-    label = "GitLab"
-    url = "https://gitlab.com/jimchr12"
-    icon = "fa-brands fa-gitlab"
+    label = "GitHub"
+    url = "https://github.com/patkarmandar"
+    icon = "fa-brands fa-github"
 
   [[params.social]]
     label = "LinkedIn"
-    url = "https://www.linkedin.com/in/jimchristopoulos-542512221/"
+    url = "https://www.linkedin.com/in/mandarsh/"
     icon = "fa-brands fa-linkedin-in"
 
   [[params.social]]
     label = "Email"
-    url = "mailto:you@example.com"
+    url = "mailto:reachmandar@protonmail.com"
     icon = "fa-regular fa-envelope"
 
   # Analytics Configuration
@@ -272,7 +268,7 @@ theme = "minimal-black"
     weight = 1
     identifier = "home"
     [menu.main.params]
-      icon = "fa-solid fa-house"
+      icon = "fa-regular fa-house"
 
   [[menu.main]]
     name = "About"
@@ -283,14 +279,14 @@ theme = "minimal-black"
     [menu.main.params]
       icon = "fa-regular fa-user"
 
-  [[menu.main]]
-    name = "About Alt"
-    pageRef = "about-alternative"
-    url = "/about-alternative/"
-    weight = 2
-    identifier = "about-alternative"
-    [menu.main.params]
-      icon = "fa-solid fa-user"
+  # [[menu.main]]
+  #   name = "About Alt"
+  #   pageRef = "about-alternative"
+  #   url = "/about-alternative/"
+  #   weight = 2
+  #   identifier = "about-alternative"
+  #   [menu.main.params]
+  #     icon = "fa-regular fa-user"
 
   [[menu.main]]
     name = "Projects"

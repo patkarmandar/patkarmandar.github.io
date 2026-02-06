@@ -1,7 +1,7 @@
 {
-  "name": "Minimal Black Theme",
-  "short_name": "Hugo Minimal Black",
-  "description": "A minimal, dark-mode first personal site, or whatever else you want it to be about",
+  "name": "Everything Mandar",
+  "short_name": "PRIME",
+  "description": "Engineering security by breaking and building code.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

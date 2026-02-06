@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Everything Mandar</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Everything Mandar</description>
+    <title>Projects on Everything Mandar</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Everything Mandar</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HackKit</title>
       <link>http://localhost:1313/projects/6/</link>
@@ -49,13 +49,6 @@
       <pubDate>Tue, 15 Jun 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/1/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;I’m passionate about understanding how systems are built and how they can be broken. I explore application architecture, build tools to observe real behavior, and write secure code that holds up in production. Instead of relying on surface fixes, I focus on engineering software that’s strong from the inside out.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-i-do&#34;&gt;&#xD;&#xA;  &lt;a href=&#34;#what-i-do&#34; class=&#34;md-heading-anchor&#34;&gt;&#xD;&#xA;    What I Do&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;I specialize in application security engineering with a strong focus on how systems are designed, abused, and secured in real environments.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
