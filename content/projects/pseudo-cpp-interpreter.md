@@ -1,9 +1,10 @@
 +++
-draft = true
 title = "Pseudo CPP Interpreter"
 date = 2023-04-30
 description = "Pseudo C++ Interpreter"
 github = "https://github.com/patkarmandar/Pseudo-CPP-Interpreter/" # Optional
 demo = "" # Optional
+tags = ["cpp"]
+categories = ["experiment"]
 featured = false
 +++

@@ -10,44 +10,44 @@
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HackKit</title>
-      <link>http://localhost:1313/projects/6/</link>
+      <link>http://localhost:1313/projects/hackkit/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/6/</guid>
+      <guid>http://localhost:1313/projects/hackkit/</guid>
       <description></description>
     </item>
     <item>
       <title>Debloater.sh</title>
-      <link>http://localhost:1313/projects/5/</link>
+      <link>http://localhost:1313/projects/debloater/</link>
       <pubDate>Fri, 14 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/5/</guid>
+      <guid>http://localhost:1313/projects/debloater/</guid>
       <description></description>
     </item>
     <item>
       <title>E-KYC</title>
-      <link>http://localhost:1313/projects/4/</link>
+      <link>http://localhost:1313/projects/e-kyc/</link>
       <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/4/</guid>
+      <guid>http://localhost:1313/projects/e-kyc/</guid>
       <description></description>
     </item>
     <item>
       <title>Pseudo CPP Interpreter</title>
-      <link>http://localhost:1313/projects/3/</link>
+      <link>http://localhost:1313/projects/pseudo-cpp-interpreter/</link>
       <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3/</guid>
+      <guid>http://localhost:1313/projects/pseudo-cpp-interpreter/</guid>
       <description></description>
     </item>
     <item>
       <title>Child Immunization System</title>
-      <link>http://localhost:1313/projects/2/</link>
+      <link>http://localhost:1313/projects/child-smmunization-system/</link>
       <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/2/</guid>
+      <guid>http://localhost:1313/projects/child-smmunization-system/</guid>
       <description></description>
     </item>
     <item>
       <title>Hosts</title>
-      <link>http://localhost:1313/projects/1/</link>
+      <link>http://localhost:1313/projects/hosts/</link>
       <pubDate>Tue, 15 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/1/</guid>
+      <guid>http://localhost:1313/projects/hosts/</guid>
       <description></description>
     </item>
   </channel>

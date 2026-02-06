@@ -1,9 +1,10 @@
 +++
-draft = true
 title = "Hosts"
 date = 2021-06-15
 description = "Bash script to create a uniq & sorted hostlist from multiple sources"
 github = "https://github.com/patkarmandar/Hosts" # Optional
 demo = "" # Optional
+tags = ["bash", "tool", "adblock"]
+categories = ["script"]
 featured = false
 +++

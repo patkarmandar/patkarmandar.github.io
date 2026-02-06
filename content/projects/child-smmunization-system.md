@@ -1,9 +1,10 @@
 +++
-draft = true
 title = "Child Immunization System"
 date = 2022-02-20
 description = "Child Immunization Chart Generator and Tracker System in Core PHP (XAMPP Stack)"
 github = "https://github.com/patkarmandar/Child-Immunization-System" # Optional
 demo = "" # Optional
+tags = ["php", "application"]
+categories = ["web"]
 featured = false
 +++
