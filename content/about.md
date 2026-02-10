@@ -1,18 +1,27 @@
 +++
 title = "About Me"
-subtitle = "Application Security Engineer | Software Engineer | Open Source Enthusiast"
+subtitle = "Application Security | Software Engineer | Open Source Enthusiast"
 layout = "about"  # or "about-alternative"
 +++
 
-I’m passionate about understanding how systems are built and how they can be broken. I explore application architecture, build tools to observe real behavior, and write secure code that holds up in production. Instead of relying on surface fixes, I focus on engineering software that’s strong from the inside out.
+> I’m passionate about understanding how systems and technologies are built—and how they can be broken. I explore application architecture by breaking it, fixing it, and rebuilding it to be more secure.
 
 ## What I Do
 
-I specialize in application security engineering with a strong focus on how systems are designed, abused, and secured in real environments.
-- **Security Testing** — Manual gray-box testing of web, API, and mobile-backed systems.
-- **Vulnerability Research** — Finding BAC, IDOR, auth bypasses, logic flaws, race conditions, SQLi, and XSS.
-- **Attack Path Mapping** — Chaining issues through workflow abuse and backend logic exploitation.
-- **Secure Engineering** — Turning findings into clean, developer-friendly fixes and tools.
+I specialize in application security engineering, with a strong focus on how systems are designed, abused, and secured in real-world environments.
+
+- **Security Testing** — Manual black-box and gray-box testing of web, API, network, and Android applications
+- **Vulnerability Research** — Everything that breaks applications, from broken access control and business logic flaws to unsafe input handling and excessive data exposure
+- **Secure Engineering** — Translating findings into clean, developer-friendly fixes, mitigations, and security tooling
+
+### Education
+
+##### Bachelor of Engineering in Computer Engineering
+University of Mumbai • Mumbai
+
+### Certifications
+- Certified Ethical Hacker (CEH) v13
+- Certifeied Network Security Practitioner (CNSP)
 
 ### Experience
 
@@ -42,14 +51,3 @@ Built backend services for digital lending platforms used by financial instituti
 
 ##### Technologies:
 PHP, Laravel, JavaScript, JQuery, JSON, Linux Admin, Git, MySQL, APIs, Secure Coding Practices
-
----
-
-## Education & Certifications
-
-### Bachelor of Engineering in Computer Engineering
-University of Mumbai • Mumbai
-
-### Certifications
-- Certified Ethical Hacker (CEH) v13
-- Certifeied Network Security Practitioner (CNSP)

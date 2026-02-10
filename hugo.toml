@@ -192,18 +192,18 @@ theme = "minimal-black"
     badge = "Security Engineer"
     title = "Hi, I'm Mandar Patkar."
     role = "Engineering security by breaking and building code."
-    summary = "Security starts where curiosity meets code. I dig into systems, map real attack paths, and transform vulnerabilities into clean, production-ready fixes. I don’t just test security — I engineer it."
+    summary = "Security starts where curiosity meets code. I love understanding how technology works beneath the surface—from architecture to algorithms, from hardware to software. That curiosity is what draws me to breaking things and fixing them."
     # avatar = "images/avatar.jpg"  # Optional: 400x400px recommended
     location = "Mumbai, IN"
-    focus = "Currently focused on digging into systems."
+    focus = "Currently focused on understanding payloads"
     available = true
     availableLabel = "Available for work"
 
     nowLabel = "Quick Facts"
     nowIntro = "Right now I'm mainly:"
     now = [
-      "Exploring application architecture",
-      "Building security tools",
+      "Breaking applications",
+      "Exploring systems and technologies",
       "Writing secure code"
     ]
 

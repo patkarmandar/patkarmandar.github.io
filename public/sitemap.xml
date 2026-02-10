@@ -29,13 +29,13 @@
     <loc>http://localhost:1313/tags/android/</loc>
     <lastmod>2023-07-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/projects/android-debloater/</loc>
+    <lastmod>2023-07-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/bash/</loc>
     <lastmod>2023-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/debloat/</loc>
-    <lastmod>2023-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/debloater/</loc>
     <lastmod>2023-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/script/</loc>
@@ -59,7 +59,7 @@
     <loc>http://localhost:1313/projects/pseudo-cpp-interpreter/</loc>
     <lastmod>2023-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/child-smmunization-system/</loc>
+    <loc>http://localhost:1313/projects/child-immunization-system/</loc>
     <lastmod>2022-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/php/</loc>

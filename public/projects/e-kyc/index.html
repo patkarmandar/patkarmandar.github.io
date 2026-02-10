@@ -9,9 +9,9 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>E-KYC | Everything Mandar</title>
+<title>Blockchain-Based E-KYC System | Everything Mandar</title>
 
-<meta name="description" content="E-KYC system based on blockchain" />
+<meta name="description" content="Blockchain-Based E-KYC System" />
 
 
 
@@ -277,25 +277,1366 @@
     <div class="article-layout">
       <article class="article-main space-y-4">
         <header class="space-y-2">
-          <h1 class="heading-page text-2xl sm:text-3xl">E-KYC</h1>
+          <h1 class="heading-page text-2xl sm:text-3xl">Blockchain-Based E-KYC System</h1>
 
           <div class="text-[0.75rem] text-muted">
             
               <span>05 May 2023</span>
             
             
+              <span> • 2 min read</span>
+            
           </div>
 
           
             <p class="max-w-xl text-sm text-muted">
-              E-KYC system based on blockchain
+              Blockchain-Based E-KYC System
             </p>
           
         </header>
 
         <div class="card card-pad">
           <div class="markdown-body">
-            
+            <p>The Blockchain-Based E-KYC System is a decentralized identity verification platform built on Ethereum that enables secure, tamper-proof, and reusable KYC records.</p>
+<p>It eliminates repeated KYC processes by maintaining a central blockchain-based KYC registry controlled by a governing authority, allowing financial institutions to verify customers without duplicating verification efforts.</p>
+<h3 id="tech-stack">
+  <a href="#tech-stack" class="md-heading-anchor">
+    Tech Stack
+  </a>
+</h3>
+<ul>
+<li>Blockchain Platform: Ethereum</li>
+<li>Smart Contracts: Solidity</li>
+<li>Blockchain Tools: Truffle, Ganache</li>
+<li>Web3 Integration: Web3.js</li>
+<li>Wallet: MetaMask</li>
+<li>Backend: Node.js</li>
+<li>Frontend: React.js</li>
+</ul>
+<h3 id="key-highlights">
+  <a href="#key-highlights" class="md-heading-anchor">
+    Key Highlights
+  </a>
+</h3>
+<ul>
+<li>Decentralized E-KYC platform built on Ethereum</li>
+<li>Government-controlled central KYC registry on blockchain</li>
+<li>Cryptographically secure and tamper-proof KYC records</li>
+<li>Eliminates redundant re-KYC across multiple organizations</li>
+<li>Transparent, auditable, and trust-minimized system</li>
+</ul>
+<h3 id="features">
+  <a href="#features" class="md-heading-anchor">
+    Features
+  </a>
+</h3>
+<ul>
+<li>KYC Registry Management
+<ul>
+<li>Financial institutions and organizations can add customer KYC records to the blockchain-based registry.</li>
+<li>KYC records are stored immutably using smart contracts.</li>
+</ul>
+</li>
+<li>KYC Request Workflow
+<ul>
+<li>Organizations can request KYC access from customers.</li>
+<li>Customers can view, approve, or deny KYC requests using their wallet.</li>
+<li>All approvals and denials are recorded on-chain.</li>
+</ul>
+</li>
+<li>Customer Control &amp; Consent
+<ul>
+<li>Customers retain full control over their KYC data.</li>
+<li>Consent is enforced through smart contracts, ensuring transparency and trust.</li>
+</ul>
+</li>
+<li>KYC Verification &amp; Reuse
+<ul>
+<li>Organizations can verify existing KYC records directly from the blockchain.</li>
+<li>Prevents repeated KYC for the same customer across different institutions.</li>
+<li>Reduces onboarding time and operational overhead.</li>
+</ul>
+</li>
+</ul>
+<h3 id="prerequisites">
+  <a href="#prerequisites" class="md-heading-anchor">
+    Prerequisites
+  </a>
+</h3>
+<ul>
+<li>Node.js &amp; npm</li>
+<li>Ganache (local Ethereum blockchain)</li>
+<li>MetaMask browser wallet</li>
+<li>Truffle (for compiling &amp; deploying contracts)</li>
+</ul>
+<h3 id="installation">
+  <a href="#installation" class="md-heading-anchor">
+    Installation
+  </a>
+</h3>
+<ol>
+<li>Clone the Repository
+<div class="mb-codeblock" id="cb-5feceb66" data-lang="text">
+  
+  <div class="mb-codeblock-header">
+    <div class="mb-codeblock-left">
+      <span class="mb-codeblock-badge">
+        TEXT
+      </span></div>
+
+    <div class="mb-codeblock-actions"><button class="mb-action-btn mb-collapse-btn" data-collapsed="false" aria-label="Collapse code">
+          <i class="fas fa-compress-alt"></i>
+          <span>Collapse</span>
+        </button><button class="mb-action-btn mb-copy-btn" aria-label="Copy code">
+        <i class="fas fa-copy"></i>
+        <span>Copy</span>
+      </button>
+    </div>
+  </div>
+
+  
+  <div 
+    class="mb-codeblock-content" 
+    data-state="expanded"
+  >
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/patkarmandar/E-KYC.git
+</span></span><span class="line"><span class="cl">cd E-KYC</span></span></code></pre></div><div class="mb-collapse-overlay">
+        <button class="mb-expand-trigger">
+          <i class="fas fa-chevron-down"></i>
+          <span>Click to expand</span>
+        </button>
+      </div></div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  const codeblock = document.getElementById('cb-5feceb66');
+  if (!codeblock) return;
+
+  const copyBtn = codeblock.querySelector('.mb-copy-btn');
+  const collapseBtn = codeblock.querySelector('.mb-collapse-btn');
+  const content = codeblock.querySelector('.mb-codeblock-content');
+  const overlay = codeblock.querySelector('.mb-collapse-overlay');
+  const expandTrigger = overlay?.querySelector('.mb-expand-trigger');
+
+  
+  
+  
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async function() {
+      let codeText = '';
+
+      
+      const codeCell = codeblock.querySelector('.lntd:last-child code');
+      if (codeCell) {
+        codeText = codeCell.textContent || codeCell.innerText || '';
+      } else {
+        
+        const codeEl = codeblock.querySelector('pre code');
+        codeText = codeEl ? (codeEl.textContent || codeEl.innerText || '') : '';
+      }
+
+      try {
+        await navigator.clipboard.writeText(codeText.trim());
+        
+        
+        const originalHTML = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
+        copyBtn.classList.add('mb-btn-success');
+        
+        setTimeout(() => {
+          copyBtn.innerHTML = originalHTML;
+          copyBtn.classList.remove('mb-btn-success');
+        }, 2000);
+      } catch (err) {
+        console.error('Failed to copy code:', err);
+        
+        
+        const textArea = document.createElement('textarea');
+        textArea.value = codeText.trim();
+        textArea.style.position = 'fixed';
+        textArea.style.opacity = '0';
+        document.body.appendChild(textArea);
+        textArea.select();
+        
+        try {
+          document.execCommand('copy');
+          copyBtn.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
+          setTimeout(() => {
+            copyBtn.innerHTML = '<i class="fas fa-copy"></i><span>Copy</span>';
+          }, 2000);
+        } catch (fallbackErr) {
+          console.error('Fallback copy failed:', fallbackErr);
+        }
+        
+        document.body.removeChild(textArea);
+      }
+    });
+  }
+
+  
+  
+  
+  if (collapseBtn && content && overlay) {
+    const collapsedHeight =  200 ;
+    
+    function toggleCollapse() {
+      const isCollapsed = content.dataset.state === 'collapsed';
+      
+      if (isCollapsed) {
+        
+        content.style.maxHeight = '';
+        content.style.overflow = '';
+        content.dataset.state = 'expanded';
+        overlay.style.display = 'none';
+        collapseBtn.innerHTML = '<i class="fas fa-compress-alt"></i><span>Collapse</span>';
+        collapseBtn.dataset.collapsed = 'false';
+      } else {
+        
+        content.style.maxHeight = collapsedHeight + 'px';
+        content.style.overflow = 'hidden';
+        content.dataset.state = 'collapsed';
+        overlay.style.display = 'flex';
+        collapseBtn.innerHTML = '<i class="fas fa-expand-alt"></i><span>Expand</span>';
+        collapseBtn.dataset.collapsed = 'true';
+      }
+    }
+
+    
+    if ('expanded' === 'collapsed') {
+      content.dataset.state = 'collapsed';
+      overlay.style.display = 'flex';
+      collapseBtn.innerHTML = '<i class="fas fa-expand-alt"></i><span>Expand</span>';
+      collapseBtn.dataset.collapsed = 'true';
+    }
+
+    collapseBtn.addEventListener('click', toggleCollapse);
+    
+    if (expandTrigger) {
+      expandTrigger.addEventListener('click', toggleCollapse);
+    }
+  }
+})();
+</script>
+
+<style>
+ 
+
+.mb-codeblock-filename {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-text);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--color-bg) 40%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+}
+
+.mb-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.4rem;
+  transition: all 0.15s ease-out;
+  font-family: inherit;
+}
+
+.mb-action-btn:hover {
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+.mb-action-btn:active {
+  transform: translateY(0);
+}
+
+.mb-action-btn i {
+  font-size: 0.7rem;
+}
+
+.mb-btn-success {
+  color: #22c55e !important;
+  border-color: #22c55e !important;
+  background: color-mix(in srgb, #22c55e 12%, transparent) !important;
+}
+
+.mb-collapse-overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.mb-expand-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 20%, transparent);
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+  backdrop-filter: blur(8px);
+}
+
+.mb-expand-trigger:hover {
+  background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+.mb-expand-trigger i {
+  font-size: 0.7rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+ 
+.mb-codeblock[data-lang="javascript"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="js"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #f7df1e 25%, transparent);
+  color: #f7df1e;
+}
+
+.mb-codeblock[data-lang="typescript"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="ts"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #3178c6 25%, transparent);
+  color: #3178c6;
+}
+
+.mb-codeblock[data-lang="python"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="py"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #3776ab 25%, transparent);
+  color: #3776ab;
+}
+
+.mb-codeblock[data-lang="go"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #00add8 25%, transparent);
+  color: #00add8;
+}
+
+.mb-codeblock[data-lang="rust"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="rs"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #ce422b 25%, transparent);
+  color: #ce422b;
+}
+
+.mb-codeblock[data-lang="html"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #e34c26 25%, transparent);
+  color: #e34c26;
+}
+
+.mb-codeblock[data-lang="css"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #264de4 25%, transparent);
+  color: #264de4;
+}
+
+.mb-codeblock[data-lang="bash"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="sh"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="shell"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #4eaa25 25%, transparent);
+  color: #4eaa25;
+}
+
+.mb-codeblock[data-lang="json"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #000000 25%, transparent);
+  color: #dddddd;
+}
+
+.mb-codeblock[data-lang="yaml"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="yml"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #cb171e 25%, transparent);
+  color: #cb171e;
+}
+</style></li>
+<li>Install Dependencies (Smart Contracts &amp; Backend)
+<div class="mb-codeblock" id="cb-6b86b273" data-lang="text">
+  
+  <div class="mb-codeblock-header">
+    <div class="mb-codeblock-left">
+      <span class="mb-codeblock-badge">
+        TEXT
+      </span></div>
+
+    <div class="mb-codeblock-actions"><button class="mb-action-btn mb-collapse-btn" data-collapsed="false" aria-label="Collapse code">
+          <i class="fas fa-compress-alt"></i>
+          <span>Collapse</span>
+        </button><button class="mb-action-btn mb-copy-btn" aria-label="Copy code">
+        <i class="fas fa-copy"></i>
+        <span>Copy</span>
+      </button>
+    </div>
+  </div>
+
+  
+  <div 
+    class="mb-codeblock-content" 
+    data-state="expanded"
+  >
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm install</span></span></code></pre></div><div class="mb-collapse-overlay">
+        <button class="mb-expand-trigger">
+          <i class="fas fa-chevron-down"></i>
+          <span>Click to expand</span>
+        </button>
+      </div></div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  const codeblock = document.getElementById('cb-6b86b273');
+  if (!codeblock) return;
+
+  const copyBtn = codeblock.querySelector('.mb-copy-btn');
+  const collapseBtn = codeblock.querySelector('.mb-collapse-btn');
+  const content = codeblock.querySelector('.mb-codeblock-content');
+  const overlay = codeblock.querySelector('.mb-collapse-overlay');
+  const expandTrigger = overlay?.querySelector('.mb-expand-trigger');
+
+  
+  
+  
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async function() {
+      let codeText = '';
+
+      
+      const codeCell = codeblock.querySelector('.lntd:last-child code');
+      if (codeCell) {
+        codeText = codeCell.textContent || codeCell.innerText || '';
+      } else {
+        
+        const codeEl = codeblock.querySelector('pre code');
+        codeText = codeEl ? (codeEl.textContent || codeEl.innerText || '') : '';
+      }
+
+      try {
+        await navigator.clipboard.writeText(codeText.trim());
+        
+        
+        const originalHTML = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
+        copyBtn.classList.add('mb-btn-success');
+        
+        setTimeout(() => {
+          copyBtn.innerHTML = originalHTML;
+          copyBtn.classList.remove('mb-btn-success');
+        }, 2000);
+      } catch (err) {
+        console.error('Failed to copy code:', err);
+        
+        
+        const textArea = document.createElement('textarea');
+        textArea.value = codeText.trim();
+        textArea.style.position = 'fixed';
+        textArea.style.opacity = '0';
+        document.body.appendChild(textArea);
+        textArea.select();
+        
+        try {
+          document.execCommand('copy');
+          copyBtn.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
+          setTimeout(() => {
+            copyBtn.innerHTML = '<i class="fas fa-copy"></i><span>Copy</span>';
+          }, 2000);
+        } catch (fallbackErr) {
+          console.error('Fallback copy failed:', fallbackErr);
+        }
+        
+        document.body.removeChild(textArea);
+      }
+    });
+  }
+
+  
+  
+  
+  if (collapseBtn && content && overlay) {
+    const collapsedHeight =  200 ;
+    
+    function toggleCollapse() {
+      const isCollapsed = content.dataset.state === 'collapsed';
+      
+      if (isCollapsed) {
+        
+        content.style.maxHeight = '';
+        content.style.overflow = '';
+        content.dataset.state = 'expanded';
+        overlay.style.display = 'none';
+        collapseBtn.innerHTML = '<i class="fas fa-compress-alt"></i><span>Collapse</span>';
+        collapseBtn.dataset.collapsed = 'false';
+      } else {
+        
+        content.style.maxHeight = collapsedHeight + 'px';
+        content.style.overflow = 'hidden';
+        content.dataset.state = 'collapsed';
+        overlay.style.display = 'flex';
+        collapseBtn.innerHTML = '<i class="fas fa-expand-alt"></i><span>Expand</span>';
+        collapseBtn.dataset.collapsed = 'true';
+      }
+    }
+
+    
+    if ('expanded' === 'collapsed') {
+      content.dataset.state = 'collapsed';
+      overlay.style.display = 'flex';
+      collapseBtn.innerHTML = '<i class="fas fa-expand-alt"></i><span>Expand</span>';
+      collapseBtn.dataset.collapsed = 'true';
+    }
+
+    collapseBtn.addEventListener('click', toggleCollapse);
+    
+    if (expandTrigger) {
+      expandTrigger.addEventListener('click', toggleCollapse);
+    }
+  }
+})();
+</script>
+
+<style>
+ 
+
+.mb-codeblock-filename {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-text);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--color-bg) 40%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+}
+
+.mb-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.4rem;
+  transition: all 0.15s ease-out;
+  font-family: inherit;
+}
+
+.mb-action-btn:hover {
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+.mb-action-btn:active {
+  transform: translateY(0);
+}
+
+.mb-action-btn i {
+  font-size: 0.7rem;
+}
+
+.mb-btn-success {
+  color: #22c55e !important;
+  border-color: #22c55e !important;
+  background: color-mix(in srgb, #22c55e 12%, transparent) !important;
+}
+
+.mb-collapse-overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.mb-expand-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 20%, transparent);
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+  backdrop-filter: blur(8px);
+}
+
+.mb-expand-trigger:hover {
+  background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+.mb-expand-trigger i {
+  font-size: 0.7rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+ 
+.mb-codeblock[data-lang="javascript"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="js"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #f7df1e 25%, transparent);
+  color: #f7df1e;
+}
+
+.mb-codeblock[data-lang="typescript"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="ts"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #3178c6 25%, transparent);
+  color: #3178c6;
+}
+
+.mb-codeblock[data-lang="python"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="py"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #3776ab 25%, transparent);
+  color: #3776ab;
+}
+
+.mb-codeblock[data-lang="go"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #00add8 25%, transparent);
+  color: #00add8;
+}
+
+.mb-codeblock[data-lang="rust"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="rs"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #ce422b 25%, transparent);
+  color: #ce422b;
+}
+
+.mb-codeblock[data-lang="html"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #e34c26 25%, transparent);
+  color: #e34c26;
+}
+
+.mb-codeblock[data-lang="css"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #264de4 25%, transparent);
+  color: #264de4;
+}
+
+.mb-codeblock[data-lang="bash"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="sh"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="shell"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #4eaa25 25%, transparent);
+  color: #4eaa25;
+}
+
+.mb-codeblock[data-lang="json"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #000000 25%, transparent);
+  color: #dddddd;
+}
+
+.mb-codeblock[data-lang="yaml"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="yml"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #cb171e 25%, transparent);
+  color: #cb171e;
+}
+</style></li>
+<li>Start a Local Blockchain
+<ul>
+<li>Open Ganache (GUI or CLI).</li>
+<li>Ensure the network RPC endpoint is set to default: <code>http://127.0.0.1:7545</code></li>
+</ul>
+</li>
+<li>Configure MetaMask
+<ul>
+<li>Install MetaMask extension in your browser.</li>
+<li>Add a new network -&gt; Custom RPC with:
+<ul>
+<li>RPC URL: http://127.0.0.1:7545</li>
+<li>Chain ID: 1337 (or Ganache network ID)</li>
+</ul>
+</li>
+<li>Import one account from Ganache using its private key.</li>
+</ul>
+</li>
+<li>Compile &amp; Deploy Smart Contracts
+<div class="mb-codeblock" id="cb-d4735e3a" data-lang="text">
+  
+  <div class="mb-codeblock-header">
+    <div class="mb-codeblock-left">
+      <span class="mb-codeblock-badge">
+        TEXT
+      </span></div>
+
+    <div class="mb-codeblock-actions"><button class="mb-action-btn mb-collapse-btn" data-collapsed="false" aria-label="Collapse code">
+          <i class="fas fa-compress-alt"></i>
+          <span>Collapse</span>
+        </button><button class="mb-action-btn mb-copy-btn" aria-label="Copy code">
+        <i class="fas fa-copy"></i>
+        <span>Copy</span>
+      </button>
+    </div>
+  </div>
+
+  
+  <div 
+    class="mb-codeblock-content" 
+    data-state="expanded"
+  >
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npx truffle compile
+</span></span><span class="line"><span class="cl">npx truffle migrate --reset</span></span></code></pre></div><div class="mb-collapse-overlay">
+        <button class="mb-expand-trigger">
+          <i class="fas fa-chevron-down"></i>
+          <span>Click to expand</span>
+        </button>
+      </div></div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  const codeblock = document.getElementById('cb-d4735e3a');
+  if (!codeblock) return;
+
+  const copyBtn = codeblock.querySelector('.mb-copy-btn');
+  const collapseBtn = codeblock.querySelector('.mb-collapse-btn');
+  const content = codeblock.querySelector('.mb-codeblock-content');
+  const overlay = codeblock.querySelector('.mb-collapse-overlay');
+  const expandTrigger = overlay?.querySelector('.mb-expand-trigger');
+
+  
+  
+  
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async function() {
+      let codeText = '';
+
+      
+      const codeCell = codeblock.querySelector('.lntd:last-child code');
+      if (codeCell) {
+        codeText = codeCell.textContent || codeCell.innerText || '';
+      } else {
+        
+        const codeEl = codeblock.querySelector('pre code');
+        codeText = codeEl ? (codeEl.textContent || codeEl.innerText || '') : '';
+      }
+
+      try {
+        await navigator.clipboard.writeText(codeText.trim());
+        
+        
+        const originalHTML = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
+        copyBtn.classList.add('mb-btn-success');
+        
+        setTimeout(() => {
+          copyBtn.innerHTML = originalHTML;
+          copyBtn.classList.remove('mb-btn-success');
+        }, 2000);
+      } catch (err) {
+        console.error('Failed to copy code:', err);
+        
+        
+        const textArea = document.createElement('textarea');
+        textArea.value = codeText.trim();
+        textArea.style.position = 'fixed';
+        textArea.style.opacity = '0';
+        document.body.appendChild(textArea);
+        textArea.select();
+        
+        try {
+          document.execCommand('copy');
+          copyBtn.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
+          setTimeout(() => {
+            copyBtn.innerHTML = '<i class="fas fa-copy"></i><span>Copy</span>';
+          }, 2000);
+        } catch (fallbackErr) {
+          console.error('Fallback copy failed:', fallbackErr);
+        }
+        
+        document.body.removeChild(textArea);
+      }
+    });
+  }
+
+  
+  
+  
+  if (collapseBtn && content && overlay) {
+    const collapsedHeight =  200 ;
+    
+    function toggleCollapse() {
+      const isCollapsed = content.dataset.state === 'collapsed';
+      
+      if (isCollapsed) {
+        
+        content.style.maxHeight = '';
+        content.style.overflow = '';
+        content.dataset.state = 'expanded';
+        overlay.style.display = 'none';
+        collapseBtn.innerHTML = '<i class="fas fa-compress-alt"></i><span>Collapse</span>';
+        collapseBtn.dataset.collapsed = 'false';
+      } else {
+        
+        content.style.maxHeight = collapsedHeight + 'px';
+        content.style.overflow = 'hidden';
+        content.dataset.state = 'collapsed';
+        overlay.style.display = 'flex';
+        collapseBtn.innerHTML = '<i class="fas fa-expand-alt"></i><span>Expand</span>';
+        collapseBtn.dataset.collapsed = 'true';
+      }
+    }
+
+    
+    if ('expanded' === 'collapsed') {
+      content.dataset.state = 'collapsed';
+      overlay.style.display = 'flex';
+      collapseBtn.innerHTML = '<i class="fas fa-expand-alt"></i><span>Expand</span>';
+      collapseBtn.dataset.collapsed = 'true';
+    }
+
+    collapseBtn.addEventListener('click', toggleCollapse);
+    
+    if (expandTrigger) {
+      expandTrigger.addEventListener('click', toggleCollapse);
+    }
+  }
+})();
+</script>
+
+<style>
+ 
+
+.mb-codeblock-filename {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-text);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--color-bg) 40%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+}
+
+.mb-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.4rem;
+  transition: all 0.15s ease-out;
+  font-family: inherit;
+}
+
+.mb-action-btn:hover {
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+.mb-action-btn:active {
+  transform: translateY(0);
+}
+
+.mb-action-btn i {
+  font-size: 0.7rem;
+}
+
+.mb-btn-success {
+  color: #22c55e !important;
+  border-color: #22c55e !important;
+  background: color-mix(in srgb, #22c55e 12%, transparent) !important;
+}
+
+.mb-collapse-overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.mb-expand-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 20%, transparent);
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+  backdrop-filter: blur(8px);
+}
+
+.mb-expand-trigger:hover {
+  background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+.mb-expand-trigger i {
+  font-size: 0.7rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+ 
+.mb-codeblock[data-lang="javascript"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="js"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #f7df1e 25%, transparent);
+  color: #f7df1e;
+}
+
+.mb-codeblock[data-lang="typescript"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="ts"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #3178c6 25%, transparent);
+  color: #3178c6;
+}
+
+.mb-codeblock[data-lang="python"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="py"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #3776ab 25%, transparent);
+  color: #3776ab;
+}
+
+.mb-codeblock[data-lang="go"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #00add8 25%, transparent);
+  color: #00add8;
+}
+
+.mb-codeblock[data-lang="rust"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="rs"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #ce422b 25%, transparent);
+  color: #ce422b;
+}
+
+.mb-codeblock[data-lang="html"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #e34c26 25%, transparent);
+  color: #e34c26;
+}
+
+.mb-codeblock[data-lang="css"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #264de4 25%, transparent);
+  color: #264de4;
+}
+
+.mb-codeblock[data-lang="bash"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="sh"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="shell"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #4eaa25 25%, transparent);
+  color: #4eaa25;
+}
+
+.mb-codeblock[data-lang="json"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #000000 25%, transparent);
+  color: #dddddd;
+}
+
+.mb-codeblock[data-lang="yaml"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="yml"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #cb171e 25%, transparent);
+  color: #cb171e;
+}
+</style></li>
+<li>Run the Frontend (React)
+<ul>
+<li>Open a new terminal inside the project:</li>
+</ul>
+<div class="mb-codeblock" id="cb-4e074085" data-lang="text">
+  
+  <div class="mb-codeblock-header">
+    <div class="mb-codeblock-left">
+      <span class="mb-codeblock-badge">
+        TEXT
+      </span></div>
+
+    <div class="mb-codeblock-actions"><button class="mb-action-btn mb-collapse-btn" data-collapsed="false" aria-label="Collapse code">
+          <i class="fas fa-compress-alt"></i>
+          <span>Collapse</span>
+        </button><button class="mb-action-btn mb-copy-btn" aria-label="Copy code">
+        <i class="fas fa-copy"></i>
+        <span>Copy</span>
+      </button>
+    </div>
+  </div>
+
+  
+  <div 
+    class="mb-codeblock-content" 
+    data-state="expanded"
+  >
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd client
+</span></span><span class="line"><span class="cl">npm start</span></span></code></pre></div><div class="mb-collapse-overlay">
+        <button class="mb-expand-trigger">
+          <i class="fas fa-chevron-down"></i>
+          <span>Click to expand</span>
+        </button>
+      </div></div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  const codeblock = document.getElementById('cb-4e074085');
+  if (!codeblock) return;
+
+  const copyBtn = codeblock.querySelector('.mb-copy-btn');
+  const collapseBtn = codeblock.querySelector('.mb-collapse-btn');
+  const content = codeblock.querySelector('.mb-codeblock-content');
+  const overlay = codeblock.querySelector('.mb-collapse-overlay');
+  const expandTrigger = overlay?.querySelector('.mb-expand-trigger');
+
+  
+  
+  
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async function() {
+      let codeText = '';
+
+      
+      const codeCell = codeblock.querySelector('.lntd:last-child code');
+      if (codeCell) {
+        codeText = codeCell.textContent || codeCell.innerText || '';
+      } else {
+        
+        const codeEl = codeblock.querySelector('pre code');
+        codeText = codeEl ? (codeEl.textContent || codeEl.innerText || '') : '';
+      }
+
+      try {
+        await navigator.clipboard.writeText(codeText.trim());
+        
+        
+        const originalHTML = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
+        copyBtn.classList.add('mb-btn-success');
+        
+        setTimeout(() => {
+          copyBtn.innerHTML = originalHTML;
+          copyBtn.classList.remove('mb-btn-success');
+        }, 2000);
+      } catch (err) {
+        console.error('Failed to copy code:', err);
+        
+        
+        const textArea = document.createElement('textarea');
+        textArea.value = codeText.trim();
+        textArea.style.position = 'fixed';
+        textArea.style.opacity = '0';
+        document.body.appendChild(textArea);
+        textArea.select();
+        
+        try {
+          document.execCommand('copy');
+          copyBtn.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
+          setTimeout(() => {
+            copyBtn.innerHTML = '<i class="fas fa-copy"></i><span>Copy</span>';
+          }, 2000);
+        } catch (fallbackErr) {
+          console.error('Fallback copy failed:', fallbackErr);
+        }
+        
+        document.body.removeChild(textArea);
+      }
+    });
+  }
+
+  
+  
+  
+  if (collapseBtn && content && overlay) {
+    const collapsedHeight =  200 ;
+    
+    function toggleCollapse() {
+      const isCollapsed = content.dataset.state === 'collapsed';
+      
+      if (isCollapsed) {
+        
+        content.style.maxHeight = '';
+        content.style.overflow = '';
+        content.dataset.state = 'expanded';
+        overlay.style.display = 'none';
+        collapseBtn.innerHTML = '<i class="fas fa-compress-alt"></i><span>Collapse</span>';
+        collapseBtn.dataset.collapsed = 'false';
+      } else {
+        
+        content.style.maxHeight = collapsedHeight + 'px';
+        content.style.overflow = 'hidden';
+        content.dataset.state = 'collapsed';
+        overlay.style.display = 'flex';
+        collapseBtn.innerHTML = '<i class="fas fa-expand-alt"></i><span>Expand</span>';
+        collapseBtn.dataset.collapsed = 'true';
+      }
+    }
+
+    
+    if ('expanded' === 'collapsed') {
+      content.dataset.state = 'collapsed';
+      overlay.style.display = 'flex';
+      collapseBtn.innerHTML = '<i class="fas fa-expand-alt"></i><span>Expand</span>';
+      collapseBtn.dataset.collapsed = 'true';
+    }
+
+    collapseBtn.addEventListener('click', toggleCollapse);
+    
+    if (expandTrigger) {
+      expandTrigger.addEventListener('click', toggleCollapse);
+    }
+  }
+})();
+</script>
+
+<style>
+ 
+
+.mb-codeblock-filename {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-text);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--color-bg) 40%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+}
+
+.mb-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.4rem;
+  transition: all 0.15s ease-out;
+  font-family: inherit;
+}
+
+.mb-action-btn:hover {
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+.mb-action-btn:active {
+  transform: translateY(0);
+}
+
+.mb-action-btn i {
+  font-size: 0.7rem;
+}
+
+.mb-btn-success {
+  color: #22c55e !important;
+  border-color: #22c55e !important;
+  background: color-mix(in srgb, #22c55e 12%, transparent) !important;
+}
+
+.mb-collapse-overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.mb-expand-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 20%, transparent);
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+  backdrop-filter: blur(8px);
+}
+
+.mb-expand-trigger:hover {
+  background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+.mb-expand-trigger i {
+  font-size: 0.7rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+ 
+.mb-codeblock[data-lang="javascript"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="js"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #f7df1e 25%, transparent);
+  color: #f7df1e;
+}
+
+.mb-codeblock[data-lang="typescript"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="ts"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #3178c6 25%, transparent);
+  color: #3178c6;
+}
+
+.mb-codeblock[data-lang="python"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="py"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #3776ab 25%, transparent);
+  color: #3776ab;
+}
+
+.mb-codeblock[data-lang="go"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #00add8 25%, transparent);
+  color: #00add8;
+}
+
+.mb-codeblock[data-lang="rust"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="rs"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #ce422b 25%, transparent);
+  color: #ce422b;
+}
+
+.mb-codeblock[data-lang="html"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #e34c26 25%, transparent);
+  color: #e34c26;
+}
+
+.mb-codeblock[data-lang="css"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #264de4 25%, transparent);
+  color: #264de4;
+}
+
+.mb-codeblock[data-lang="bash"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="sh"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="shell"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #4eaa25 25%, transparent);
+  color: #4eaa25;
+}
+
+.mb-codeblock[data-lang="json"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #000000 25%, transparent);
+  color: #dddddd;
+}
+
+.mb-codeblock[data-lang="yaml"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="yml"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #cb171e 25%, transparent);
+  color: #cb171e;
+}
+</style><ul>
+<li>This starts the React UI on: <code>http://localhost:3000</code></li>
+</ul>
+</li>
+<li>Make sure Truffle config (truffle-config.js) network settings point to Ganache’s host and port.</li>
+</ol>
+
           </div>
         </div>
       </article>
@@ -313,7 +1654,19 @@
               </button>
             </div>
             <nav class="toc-nav">
-              <nav id="TableOfContents"></nav>
+              <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+        <li><a href="#key-highlights">Key Highlights</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
             </nav>
           </div>
         </aside>

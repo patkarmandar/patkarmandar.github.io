@@ -9,9 +9,9 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Debloater.sh | Everything Mandar</title>
+<title>Android Debloater Script | Everything Mandar</title>
 
-<meta name="description" content="Android debloater script using ADB" />
+<meta name="description" content="Debloater.sh — Android Debloater Script" />
 
 
 
@@ -277,25 +277,148 @@
     <div class="article-layout">
       <article class="article-main space-y-4">
         <header class="space-y-2">
-          <h1 class="heading-page text-2xl sm:text-3xl">Debloater.sh</h1>
+          <h1 class="heading-page text-2xl sm:text-3xl">Android Debloater Script</h1>
 
           <div class="text-[0.75rem] text-muted">
             
               <span>14 Jul 2023</span>
             
             
+              <span> • 2 min read</span>
+            
           </div>
 
           
             <p class="max-w-xl text-sm text-muted">
-              Android debloater script using ADB
+              Debloater.sh — Android Debloater Script
             </p>
           
         </header>
 
         <div class="card card-pad">
           <div class="markdown-body">
-            
+            <p>Debloater.sh is a Bash-based Android debloating script that uses ADB (Android Debug Bridge) to disable and remove user data of pre-installed system applications (bloatware).</p>
+<p>Debloating helps improve privacy, reduce background activity, and optimize battery performance by disabling unnecessary OEM or carrier-installed apps.</p>
+<div class="md-alert md-alert-warning">
+  This script does not permanently uninstall system apps (root is not required). Instead, it removes app data from the user space, effectively disabling the app for the current user.
+</div>
+
+<h3 id="how-it-works-technical-explanation">
+  <a href="#how-it-works-technical-explanation" class="md-heading-anchor">
+    How It Works (Technical Explanation)
+  </a>
+</h3>
+<ul>
+<li>System applications reside in the /system partition, which is read-only and cannot be modified without root access.</li>
+<li>However, system apps also store user data and cache in the /data partition.</li>
+<li>This script removes the app’s user data and cache using ADB, making the app inactive.</li>
+<li>A factory reset restores all removed packages, as it wipes the /data partition.</li>
+<li>OTA updates may reinstall disabled system apps — the script should be re-run after updates.</li>
+</ul>
+<div class="md-alert md-alert-note">
+  This method does not free system storage space, but significantly reduces background services and telemetry.
+</div>
+
+<h3 id="features">
+  <a href="#features" class="md-heading-anchor">
+    Features
+  </a>
+</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Search installed Android packages</li>
+<li><input checked="" disabled="" type="checkbox"> List all system and user-installed packages</li>
+<li><input checked="" disabled="" type="checkbox"> Uninstall (disable) a single package</li>
+<li><input checked="" disabled="" type="checkbox"> Bulk uninstall multiple packages</li>
+<li><input disabled="" type="checkbox"> Restore previously removed packages</li>
+</ul>
+<h3 id="prerequisites">
+  <a href="#prerequisites" class="md-heading-anchor">
+    Prerequisites
+  </a>
+</h3>
+<ul>
+<li>Android device (non-rooted supported)</li>
+<li>USB cable</li>
+<li>ADB installed on host machine</li>
+<li>Developer Options &amp; USB Debugging enabled on device</li>
+<li>Bash shell (Linux / macOS / WSL)</li>
+</ul>
+<h3 id="usage-instructions">
+  <a href="#usage-instructions" class="md-heading-anchor">
+    Usage Instructions
+  </a>
+</h3>
+<ol>
+<li>Backup Your Device
+<div class="md-alert md-alert-warning">
+  Strongly recommended — Create a full device backup before proceeding.
+</div>
+</li>
+<li>Enable Developer Options
+<ul>
+<li>Go to Settings -&gt; About Phone</li>
+<li>Tap Build Number 7 times</li>
+<li>Enable USB Debugging from Developer Options</li>
+</ul>
+</li>
+<li>Install ADB
+<ul>
+<li>Verify ADB installation: <code>adb version</code></li>
+<li>If not installed, install ADB via:
+<ul>
+<li>Linux: <code>sudo apt install adb</code></li>
+<li>macOS: <code>brew install android-platform-tools</code></li>
+<li>Windows: <code>Android SDK Platform Tools</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Run the Script
+<ul>
+<li>Connect your device via USB, then: <code>bash debloat.sh</code></li>
+</ul>
+</li>
+<li>Follow the on-screen prompts to search, uninstall, restore, or bulk manage packages.</li>
+</ol>
+<h3 id="risks--warnings">
+  <a href="#risks--warnings" class="md-heading-anchor">
+    Risks &amp; Warnings
+  </a>
+</h3>
+<ul>
+<li>Removing core or essential system packages may cause:
+<ul>
+<li>Boot loops</li>
+<li>App crashes</li>
+</ul>
+</li>
+<li>A factory reset will restore all removed packages</li>
+<li>This script cannot permanently brick your device</li>
+<li>Use at your own risk</li>
+</ul>
+<h3 id="disclaimer">
+  <a href="#disclaimer" class="md-heading-anchor">
+    Disclaimer
+  </a>
+</h3>
+<div class="md-alert md-alert-warning">
+  This project is provided as-is.
+The author is not responsible for data loss, device malfunction, or unintended behavior.
+Always review packages carefully and keep backups.
+</div>
+
+<h3 id="use-cases">
+  <a href="#use-cases" class="md-heading-anchor">
+    Use Cases
+  </a>
+</h3>
+<ul>
+<li>Removing OEM bloatware</li>
+<li>Improving battery life</li>
+<li>Reducing background services</li>
+<li>Enhancing privacy on non-rooted devices</li>
+</ul>
+
           </div>
         </div>
       </article>
@@ -313,7 +436,21 @@
               </button>
             </div>
             <nav class="toc-nav">
-              <nav id="TableOfContents"></nav>
+              <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#how-it-works-technical-explanation">How It Works (Technical Explanation)</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#usage-instructions">Usage Instructions</a></li>
+        <li><a href="#risks--warnings">Risks &amp; Warnings</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+        <li><a href="#use-cases">Use Cases</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
             </nav>
           </div>
         </aside>

@@ -9,9 +9,9 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Child Immunization System | Everything Mandar</title>
+<title>Child Immunization Chart Generator and Tracking System | Everything Mandar</title>
 
-<meta name="description" content="Child Immunization Chart Generator and Tracker System in Core PHP (XAMPP Stack)" />
+<meta name="description" content="Child Immunization Chart Generator and Tracker System in Core PHP." />
 
 
 
@@ -277,25 +277,422 @@
     <div class="article-layout">
       <article class="article-main space-y-4">
         <header class="space-y-2">
-          <h1 class="heading-page text-2xl sm:text-3xl">Child Immunization System</h1>
+          <h1 class="heading-page text-2xl sm:text-3xl">Child Immunization Chart Generator and Tracking System</h1>
 
           <div class="text-[0.75rem] text-muted">
             
               <span>20 Feb 2022</span>
             
             
+              <span> • 2 min read</span>
+            
           </div>
 
           
             <p class="max-w-xl text-sm text-muted">
-              Child Immunization Chart Generator and Tracker System in Core PHP (XAMPP Stack)
+              Child Immunization Chart Generator and Tracker System in Core PHP.
             </p>
           
         </header>
 
         <div class="card card-pad">
           <div class="markdown-body">
-            
+            <p>The Child Immunization Chart Generator and Tracking System is a web-based healthcare management system built using Core PHP. It helps parents, hospitals, and clinics digitally manage child vaccination schedules, track immunization history, and receive automated reminders via email and SMS.</p>
+<p>This application is designed to reduce missed vaccinations, improve record management, and streamline communication between parents and healthcare providers.</p>
+<h3 id="technology-stack--integrations">
+  <a href="#technology-stack--integrations" class="md-heading-anchor">
+    Technology Stack &amp; Integrations
+  </a>
+</h3>
+<ul>
+<li>Backend: Core PHP</li>
+<li>Local Development Stack: XAMPP (Apache, MySQL, PHP)</li>
+<li>Task Scheduler: Cron Jobs</li>
+<li>Email Service: PHPMailer (SMTP-based email notifications)</li>
+<li>SMS Service: ITEXMO SEND SMS API</li>
+<li>Environment Management: phpdotenv (for secure configuration and secrets handling)</li>
+</ul>
+<h3 id="key-highlights">
+  <a href="#key-highlights" class="md-heading-anchor">
+    Key Highlights
+  </a>
+</h3>
+<ul>
+<li>Automated vaccination reminders using Cron Jobs</li>
+<li>Email notifications via PHPMailer</li>
+<li>SMS alerts via ITEXMO SEND SMS API</li>
+<li>Secure configuration using phpdotenv</li>
+<li>Role-based access for parents, hospitals, and doctors</li>
+</ul>
+<h3 id="features">
+  <a href="#features" class="md-heading-anchor">
+    Features
+  </a>
+</h3>
+<ul>
+<li>Immunization Chart Management
+<ul>
+<li>Digital vaccination records with vaccine name, administered date, and next due date.</li>
+</ul>
+</li>
+<li>Automated Reminders
+<ul>
+<li>Email notifications via PHPMailer.</li>
+<li>SMS alerts via ITEXMO SEND SMS API.</li>
+<li>Cron-based scheduling for automated execution.</li>
+</ul>
+</li>
+<li>Parent &amp; Child Management
+<ul>
+<li>Parents can manage multiple child profiles.</li>
+<li>Individual immunization history per child.</li>
+</ul>
+</li>
+<li>Hospital / Doctor Management
+<ul>
+<li>Hospitals and clinics can add and manage doctor profiles.</li>
+</ul>
+</li>
+<li>Nutrition Guidance
+<ul>
+<li>Age-based nutrition recommendations for children.</li>
+</ul>
+</li>
+</ul>
+<h3 id="prerequisites">
+  <a href="#prerequisites" class="md-heading-anchor">
+    Prerequisites
+  </a>
+</h3>
+<ul>
+<li>XAMPP (PHP 7.4+)</li>
+<li>Composer</li>
+<li>MySQL</li>
+</ul>
+<h3 id="installation">
+  <a href="#installation" class="md-heading-anchor">
+    Installation
+  </a>
+</h3>
+<ol>
+<li>Clone and setup project
+<div class="mb-codeblock" id="cb-5feceb66" data-lang="text">
+  
+  <div class="mb-codeblock-header">
+    <div class="mb-codeblock-left">
+      <span class="mb-codeblock-badge">
+        TEXT
+      </span></div>
+
+    <div class="mb-codeblock-actions"><button class="mb-action-btn mb-collapse-btn" data-collapsed="false" aria-label="Collapse code">
+          <i class="fas fa-compress-alt"></i>
+          <span>Collapse</span>
+        </button><button class="mb-action-btn mb-copy-btn" aria-label="Copy code">
+        <i class="fas fa-copy"></i>
+        <span>Copy</span>
+      </button>
+    </div>
+  </div>
+
+  
+  <div 
+    class="mb-codeblock-content" 
+    data-state="expanded"
+  >
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/patkarmandar/Child-Immunization-System.git
+</span></span><span class="line"><span class="cl">cd Child-Immunization-System
+</span></span><span class="line"><span class="cl">composer install</span></span></code></pre></div><div class="mb-collapse-overlay">
+        <button class="mb-expand-trigger">
+          <i class="fas fa-chevron-down"></i>
+          <span>Click to expand</span>
+        </button>
+      </div></div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  const codeblock = document.getElementById('cb-5feceb66');
+  if (!codeblock) return;
+
+  const copyBtn = codeblock.querySelector('.mb-copy-btn');
+  const collapseBtn = codeblock.querySelector('.mb-collapse-btn');
+  const content = codeblock.querySelector('.mb-codeblock-content');
+  const overlay = codeblock.querySelector('.mb-collapse-overlay');
+  const expandTrigger = overlay?.querySelector('.mb-expand-trigger');
+
+  
+  
+  
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async function() {
+      let codeText = '';
+
+      
+      const codeCell = codeblock.querySelector('.lntd:last-child code');
+      if (codeCell) {
+        codeText = codeCell.textContent || codeCell.innerText || '';
+      } else {
+        
+        const codeEl = codeblock.querySelector('pre code');
+        codeText = codeEl ? (codeEl.textContent || codeEl.innerText || '') : '';
+      }
+
+      try {
+        await navigator.clipboard.writeText(codeText.trim());
+        
+        
+        const originalHTML = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
+        copyBtn.classList.add('mb-btn-success');
+        
+        setTimeout(() => {
+          copyBtn.innerHTML = originalHTML;
+          copyBtn.classList.remove('mb-btn-success');
+        }, 2000);
+      } catch (err) {
+        console.error('Failed to copy code:', err);
+        
+        
+        const textArea = document.createElement('textarea');
+        textArea.value = codeText.trim();
+        textArea.style.position = 'fixed';
+        textArea.style.opacity = '0';
+        document.body.appendChild(textArea);
+        textArea.select();
+        
+        try {
+          document.execCommand('copy');
+          copyBtn.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
+          setTimeout(() => {
+            copyBtn.innerHTML = '<i class="fas fa-copy"></i><span>Copy</span>';
+          }, 2000);
+        } catch (fallbackErr) {
+          console.error('Fallback copy failed:', fallbackErr);
+        }
+        
+        document.body.removeChild(textArea);
+      }
+    });
+  }
+
+  
+  
+  
+  if (collapseBtn && content && overlay) {
+    const collapsedHeight =  200 ;
+    
+    function toggleCollapse() {
+      const isCollapsed = content.dataset.state === 'collapsed';
+      
+      if (isCollapsed) {
+        
+        content.style.maxHeight = '';
+        content.style.overflow = '';
+        content.dataset.state = 'expanded';
+        overlay.style.display = 'none';
+        collapseBtn.innerHTML = '<i class="fas fa-compress-alt"></i><span>Collapse</span>';
+        collapseBtn.dataset.collapsed = 'false';
+      } else {
+        
+        content.style.maxHeight = collapsedHeight + 'px';
+        content.style.overflow = 'hidden';
+        content.dataset.state = 'collapsed';
+        overlay.style.display = 'flex';
+        collapseBtn.innerHTML = '<i class="fas fa-expand-alt"></i><span>Expand</span>';
+        collapseBtn.dataset.collapsed = 'true';
+      }
+    }
+
+    
+    if ('expanded' === 'collapsed') {
+      content.dataset.state = 'collapsed';
+      overlay.style.display = 'flex';
+      collapseBtn.innerHTML = '<i class="fas fa-expand-alt"></i><span>Expand</span>';
+      collapseBtn.dataset.collapsed = 'true';
+    }
+
+    collapseBtn.addEventListener('click', toggleCollapse);
+    
+    if (expandTrigger) {
+      expandTrigger.addEventListener('click', toggleCollapse);
+    }
+  }
+})();
+</script>
+
+<style>
+ 
+
+.mb-codeblock-filename {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-text);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--color-bg) 40%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+}
+
+.mb-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.4rem;
+  transition: all 0.15s ease-out;
+  font-family: inherit;
+}
+
+.mb-action-btn:hover {
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+.mb-action-btn:active {
+  transform: translateY(0);
+}
+
+.mb-action-btn i {
+  font-size: 0.7rem;
+}
+
+.mb-btn-success {
+  color: #22c55e !important;
+  border-color: #22c55e !important;
+  background: color-mix(in srgb, #22c55e 12%, transparent) !important;
+}
+
+.mb-collapse-overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.mb-expand-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 20%, transparent);
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+  backdrop-filter: blur(8px);
+}
+
+.mb-expand-trigger:hover {
+  background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+.mb-expand-trigger i {
+  font-size: 0.7rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+ 
+.mb-codeblock[data-lang="javascript"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="js"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #f7df1e 25%, transparent);
+  color: #f7df1e;
+}
+
+.mb-codeblock[data-lang="typescript"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="ts"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #3178c6 25%, transparent);
+  color: #3178c6;
+}
+
+.mb-codeblock[data-lang="python"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="py"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #3776ab 25%, transparent);
+  color: #3776ab;
+}
+
+.mb-codeblock[data-lang="go"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #00add8 25%, transparent);
+  color: #00add8;
+}
+
+.mb-codeblock[data-lang="rust"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="rs"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #ce422b 25%, transparent);
+  color: #ce422b;
+}
+
+.mb-codeblock[data-lang="html"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #e34c26 25%, transparent);
+  color: #e34c26;
+}
+
+.mb-codeblock[data-lang="css"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #264de4 25%, transparent);
+  color: #264de4;
+}
+
+.mb-codeblock[data-lang="bash"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="sh"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="shell"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #4eaa25 25%, transparent);
+  color: #4eaa25;
+}
+
+.mb-codeblock[data-lang="json"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #000000 25%, transparent);
+  color: #dddddd;
+}
+
+.mb-codeblock[data-lang="yaml"] .mb-codeblock-badge,
+.mb-codeblock[data-lang="yml"] .mb-codeblock-badge {
+  background: color-mix(in srgb, #cb171e 25%, transparent);
+  color: #cb171e;
+}
+</style></li>
+<li>Move the project to: <code>C:\xampp\htdocs\</code></li>
+<li>Start Apache and MySQL from XAMPP.</li>
+<li>Create a MySQL database and import the provided SQL file.</li>
+<li>Configure environment variables using .env.</li>
+<li>(Optional) Set up a cron job for reminder automation.</li>
+</ol>
+<p>Access the application at: <code>http://localhost/child-immunization-tracker</code></p>
+
           </div>
         </div>
       </article>
@@ -313,7 +710,19 @@
               </button>
             </div>
             <nav class="toc-nav">
-              <nav id="TableOfContents"></nav>
+              <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#technology-stack--integrations">Technology Stack &amp; Integrations</a></li>
+        <li><a href="#key-highlights">Key Highlights</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
             </nav>
           </div>
         </aside>
